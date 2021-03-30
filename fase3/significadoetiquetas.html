@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Básicas de HTML,
+        atributos y valores</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 300 & display = intercambiar "
+        rel=" hoja de estilo ">
+    <link rel="stylesheet" href="hojaestilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                <img src="imagenes/logo.png" width="200" alt="Logotipo">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">inicio</a> </li>
+                    <li><a href="">Temas</a>
+                        <ul>
+                            <li><a href="tiposEtiquetas.html">tipos de etiquetas</a></li>
+                            <li><a href="significadoetiquetas.html">significado de las etiquetas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Recursos Digitales</a>
+                        <ul>
+                            <li><a href="apoyomultimedia1.html">apoyo multimedia 1</a> </li>
+                            <li><a href="apoyomultimedia2.html">apoyo multimedia 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Aprendizaje</a>
+                        <ul>
+                            <li><a href="aprendizaje1.html">Aprendizaje 1</a></li>
+                            <li><a href="aprendizaje2.html">Aprendizaje 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="autor.html">Acerca de</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main">
+            <article class="contenido1">
+                <div align="center">
+                    <p>
+                        <style>
+                            h2 {
+                                padding: 20px;
+                            }
+                        </style>
+                        <!--alingn, es para indicar donde mostrar el texto si en el centr, izquierda o derecha-->
+
+                    <table class="tabla">
+                        <tbody class="preambulo">
+                            <tr>
+                                <td colspan="2">
+                                    <p> ESTIQUETA PREAMBULO Y ELEMENTO RAIZ</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>!DOCTYPE</td>
+                                <td>tipo de documento (versión de html empleada)</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>engloba todo el documento de html</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;!----&gt;</code></td>
+                                <!--&lt; es = a "<" y &gt; es = a ">"-->
+                                <td>solo visible en el codigo</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="metadatos">
+                            <tr>
+                                <td colspan="2">METADATOS</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>head</td>
+                                <td>delimita el encabezado del documento</td>
+                            </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>titulo del documento que aparecera en la pestaña del navegador</td>
+                            </tr>
+                            <tr>
+                                <td>base</td>
+                                <td>URI base para direcciones relativas </td>
+                            </tr>
+                            <tr>
+                                <td>link</td>
+                                <td>enlace a otros archivos como: hojas de estilo</td>
+                            </tr>
+                            <tr>
+                                <td>meta</td>
+                                <td>muestar metainformacion sobre el documento</td>
+                            </tr>
+                            <tr>
+                                <td>style</td>
+                                <td>hoja de estilo incluida en el documento</td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="2">SECCIONES</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>body</td>
+                                <td>delimita el cuerpo del documento</td>
+                            </tr>
+                            <tr>
+                                <td>article</td>
+                                <td>articulo dentro de la pagina web</td>
+                            </tr>
+                            <tr>
+                                <td>section</td>
+                                <td>seccion del documento en el que contiene a la etiqueta article</td>
+                            </tr>
+                            <tr>
+                                <td>nav</td>
+                                <td>eqtiqueta de navegacion</td>
+                            </tr>
+                            <tr>
+                                <td>aside</td>
+                                <td>etiqueta de barra lateral donde se muestra contenidono relevante al tema de la
+                                    pagina</td>
+                            </tr>
+                            <tr>
+                                <td>h1 a h6</td>
+                                <td>encabezados de nivel 1 al nivel 6</td>
+                            </tr>
+                            <tr>
+                                <td>hgroup</td>
+                                <td>grupo de encabezados</td>
+                            </tr>
+                            <tr>
+                                <td>header</td>
+                                <td>cabezera del documento en esta contiene al nav o logos</td>
+                            </tr>
+                            <tr>
+                                <td>footer</td>
+                                <td>informacion de pie de pagina</td>
+                            </tr>
+                            <tr>
+                                <td>address</td>
+                                <td>informacion sobre el autor</td>
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">BLOQUES DECONTENIDO</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>p</td>
+                                <td>párrafo</td>
+                            </tr>
+                            <tr>
+                                <td>hr</td>
+                                <td>separador</td>
+                            </tr>
+                            <tr>
+                                <td>div</td>
+                                <td>bloque de division</td>
+                            </tr>
+                            <tr>
+                                <td>blockquote</td>
+                                <td>cita larga, incluye varios parrafos</td>
+                            </tr>
+                            <tr>
+                                <td>pre</td>
+                                <td>texto preformateado</td>
+                            </tr>
+                            <tr>
+                                <td>main</td>
+                                <td>principal</td>
+                            </tr>
+                            <tr>
+                                <td>figure</td>
+                                <td>ilustracion</td>
+                            </tr>
+                            <tr>
+                                <td>figcaption</td>
+                                <td>es un pie de ilustracion</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">texto(en linea)</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>br</td>
+                                <td>da un salto de linia</td>
+                            </tr>
+                            <tr>
+                                <td>wbr</th>
+                                <td>posible salto en linia</td>
+                            </tr>
+                            <tr>
+                                <td>a</td>
+                                <td>hiperenlace</td>
+                            </tr>
+                            <tr>
+                                <td>span</td>
+                                <td>contenedor de texto generico</td>
+                            </tr>
+                            <tr>
+                                <td>strong</td>
+                                <td>importante resaltado en negrilla</td>
+                            </tr>
+                            <tr>
+                                <td>em</td>
+                                <td>enfasis</td>
+                            </tr>
+                            <tr>
+                                <td>sub</td>
+                                <td>subindice</td>
+                            </tr>
+                            <tr>
+                                <td>sup</td>
+                                <td>superindice</td>
+                            </tr>
+                            <tr>
+                                <td>abbr</td>
+                                <td>abreviatura</td>
+                            </tr>
+                            <tr>
+                                <td>b</td>
+                                <td>atencion</td>
+                            </tr>
+                            <tr>
+                                <td>cite</td>
+                                <td>obra</td>
+                            </tr>
+                            <tr>
+                                <td>data</td>
+                                <td>datos</td>
+                            </tr>
+                            <tr>
+                                <td>dfn</td>
+                                <td>definicion</td>
+                            </tr>
+                            <tr>
+                                <td>kbd</td>
+                                <td>teclado</td>
+                            </tr>
+                            <tr>
+                                <td>i</td>
+                                <td>tecnicismo</td>
+                            </tr>
+                            <tr>
+                                <td>mark</td>
+                                <td>resaltado añadido posteriormente
+                                    <!--no aloriginal-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>q</td>
+                                <td>cita</td>
+                            </tr>
+                            <tr>
+                                <td>s</td>
+                                <td>incorrecto</td>
+                            </tr>
+                            <tr>
+                                <td>small</td>
+                                <td>comentario</td>
+                            </tr>
+                            <tr>
+                                <td>time</td>
+                                <td>fecha y hora</td>
+                            </tr>
+                            <tr>
+                                <td>u</td>
+                                <td>sonido inarticulado</td>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>codigo de programa</td>
+                            </tr>
+                            <tr>
+                                <td>samp</td>
+                                <td>salida (salidade programa de ordenador)</td>
+                            </tr>
+                            <tr>
+                                <td>var</td>
+                                <td>variable</td>
+                            </tr>
+                            <tr>
+                                <td>bdo</td>
+                                <td>direccion de escritura</td>
+                            </tr>
+                            <tr>
+                                <td>bdi</td>
+                                <td>ignorar direccion de escritura</td>
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Modificaciones)</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>ins</td>
+                                <td>texto insertado</td>
+                            </tr>
+                            <tr>
+                                <td>del</td>
+                                <td>texto borrado</td>
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">contenido incrustado)</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>picture</td>
+                                <td>imagenes</td>
+                            </tr>
+                            <tr>
+                                <td>img</td>
+                                <td>imagen</td>
+                            </tr>
+                            <tr>
+                                <td>iframe</td>
+                                <td>marco incrustado en el documento</td>
+                            </tr>
+                            <tr>
+                                <td>embed</td>
+                                <td>se utiliza para insertar plugins del tipo sonido y video</td>
+                            </tr>
+                            <tr>
+                                <td>object</td>
+                                <td>objeto</td>
+                            </tr>
+                            <tr>
+                                <td>param</td>
+                                <td>parametro para objeto</td>
+                            </tr>
+                            <tr>
+                                <td>video</td>
+                                <td>se usa para incrustar videos en el documento</td>
+                            </tr>
+                            <tr>
+                                <td>audio</td>
+                                <td>se utiliza para incrustar audios en el documento</td>
+                            </tr>
+                            <tr>
+                                <td>source</td>
+                                <td> origen de img,audio,video</td>
+                            </tr>
+                            <tr>
+                                <td>track</td>
+                                <td>se usa para especificar pistas de texto cronometradas externas para elementos de
+                                    medios</td>
+                            </tr>
+                            <tr>
+                                <td>map</td>
+                                <td>mapa de imagen</td>
+                            </tr>
+                            <tr>
+                                <td>area</td>
+                                <td>area en mapa de imagen</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">listas(bloque de contenido))</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>ol</td>
+                                <td>lista ordenada</td>
+                            </tr>
+                            <tr>
+                                <td>ul</td>
+                                <td>lista no ordenada</td>
+                            </tr>
+                            <tr>
+                                <td>menu</td>
+                                <td>equivalente a ul</td>
+                            </tr>
+                            <tr>
+                                <td>li</td>
+                                <td>elemento de lista</td>
+                            </tr>
+                            <tr>
+                                <td>dl</td>
+                                <td>lista de definicion</td>
+                            </tr>
+                            <tr>
+                                <td>dt</td>
+                                <td>termino en lista de definicion</td>
+                            </tr>
+                            <tr>
+                                <td>dd</td>
+                                <td>definicion en lista de definicion</td>
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">tablas</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>table</td>
+                                <td>tabla</td>
+                            </tr>
+                            <tr>
+                                <td>caption</td>
+                                <td>leyenda de tabla</td>
+                            </tr>
+                            <tr>
+                                <td>colgroup</td>
+                                <td>grupo de columnas</td>
+                            </tr>
+                            <tr>
+                                <td>tbody</td>
+                                <td>cuerpo de tabla</td>
+                            </tr>
+                            <tr>
+                                <td>thead</td>
+                                <td>cabecera de tabla</td>
+                            </tr>
+                            <tr>
+                                <td>tfoot</td>
+                                <td>pie de tabla</td>
+                            </tr>
+                            <tr>
+                                <td>tr</td>
+                                <td>fila</td>
+                            </tr>
+                            <tr>
+                                <td>td</td>
+                                <td>celda</td>
+                            </tr>
+                            <tr>
+                                <td>th</td>
+                                <td>celda de cabecera</td>
+                            </tr>
+                            <tr>
+                                <td>col</td>
+                                <td>columna</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">formulario</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>form</td>
+                                <td>formulario</td>
+                            </tr>
+                            <tr>
+                                <td>label</td>
+                                <td>etiqueta de un control</td>
+                            </tr>
+                            <tr>
+                                <td>input</td>
+                                <td>control(varios tipos)</td>
+                            </tr>
+                            <tr>
+                                <td>button</td>
+                                <td>boton</td>
+                            </tr>
+                            <tr>
+                                <td>select</td>
+                                <td>caja de lista</td>
+                            </tr>
+                            <tr>
+                                <td>datalist</td>
+                                <td>especifica una lista de opciones predefinidas para un elemento input</td>
+                            </tr>
+                            <tr>
+                                <td>optgroup</td>
+                                <td>grupo de opciones en una caja de lista</td>
+                            </tr>
+                            <tr>
+                                <td>option</td>
+                                <td>opcion de caja de lista</td>
+                            </tr>
+                            <tr>
+                                <td>textarea</td>
+                                <td>area de texto</td>
+                            </tr>
+                            <tr>
+                                <td>output</td>
+                                <td>claculo</td>
+                            </tr>
+                            <tr>
+                                <td>progress</td>
+                                <td>barra de progreso</td>
+                            </tr>
+                            <tr>
+                                <td>meter</td>
+                                <td>indicador</td>
+                            </tr>
+                            <tr>
+                                <td>fieldset</td>
+                                <td>grupo de contoles</td>
+                            </tr>
+                            <tr>
+                                <td>legend</td>
+                                <td>leyenda de grupo de controles</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">elementos interactivos</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>details</td>
+                                <td>desplegable</td>
+                            </tr>
+                            <tr>
+                                <td>summary</td>
+                                <td>leyenda para details</td>
+                            </tr>
+                            <tr>
+                                <td>dialog</td>
+                                <td>cuadro de dialogo de una aplicacion</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">scripts</td>
+                            </tr>
+                            <tr>
+                                <th> Etiqueta </th>
+                                <th> Descripcion </th>
+                            </tr>
+                            <tr>
+                                <td>script</td>
+                                <td>script</td>
+                            </tr>
+                            <tr>
+                                <td>noscript</td>
+                                <td>contenido a mostrar en navegadores que no admiten script</td>
+                            </tr>
+                            <tr>
+                                <td>template</td>
+                                <td>plantilla para script</td>
+                            </tr>
+                            <tr>
+                                <td>slot</td>
+                                <td>marcador para componente</td>
+                            </tr>
+                            <tr>
+                                <td>canvas</td>
+                                <td>zona de dibujo utilizable</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+
+                    </p>
+                </div>
+            </article>
+
+
+        </section>
+
+        <aside class="sidebar">
+            <div class="AD">
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F%3Fref%3Dpage_internal&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FXFORCEXF50%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fstarlinkofficial%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </aside>
+        <footer class="footer">
+            correo: ovalle-cano@hotmai.com <br>
+            skype:william yesid ovalle cano <br>
+            fecha de actualizacion: 21/02/2021
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
