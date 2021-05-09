@@ -1,0 +1,176 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+ul, ol{
+    list-style: none;
+}
+.menu li a{
+     
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+
+}
+.menu li a:hover{
+    background-color: #434343;/*es un efecto que todos los elementos a que pertenecen a li cuando pase el mouse tendra un efecto como
+    cambio de color*/
+}
+.menu > li{
+    float: left;
+}
+.menu li ul{/*aca ocultamos el submenu de todos los elementos ul que tengan como padre li*/
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.menu li:hover > ul{/*acac mostramos el submenu es decir todos los ul que tengan como padre a un li se mostraran "hover es cuando pase por el el menu se 
+    despliega el submenu"*/
+    display:block ;
+}
+.contenedor {
+    background: rgb(248, 197, 197);/*le asignamos un fondo a todo el contenedor*/
+    width: 90%;/*asignamos un ancho al contenedor que va a tener todo el contenido*/
+    min-width: 1000px;/*este es el ancho minimo del contenedor */
+    margin: auto;/*elmargen le damos en automatico*/
+    /*Flex*/
+    display: flex;/*sirve para manipular a los elementos hijos*/
+    flex-direction: row;
+    flex-wrap: wrap;/*esto es para que si un elemento no cabe lo pase abajo*/
+    /*tambien se pueded usar felx-flow: row wrap*/
+}
+body{
+    background: #ecb1b1;/*le asiganmos un color de fondo al body lo que esta por fuera del contenedor*/
+}
+header{
+    background: #2c3e50;/*le agregamos un color de fondo al heder en el que contienen el logo y el menu*/
+    width: 100%;
+    padding: 20px;
+    /*FLEX*/
+    display: flex;/*PARA manipular los elementos*/
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-flow: row wrap;
+
+}
+header nav{
+    width: 50%;
+    
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a{/*para darle un fondo al menu de navegacion unaaliniacion color del texto*/
+    background: #15b7e9;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+
+    /*flex*/
+    flex-grow: 1;
+
+}
+.main {
+    background-color: #fff;
+    padding: 55px;
+    width: 70%;;
+}
+.main article{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.main article:nth-last-child(1){
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.main .thumb img{
+    width: 90%;
+    height: 250px;
+}
+aside{
+    background: #e67e22;
+    /*flex*/
+    flex: 1 1 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+aside .sidebar{
+    background: #D35400;
+    height: 250px;
+    margin: 15px;
+}
+footer{
+    background: #2c3e50;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media screen and (max-width:900px){
+    .contenedor{
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+    header .logo{
+        margin: 20px 0;
+    }
+    header nav{
+        width: 100%;
+    }
+    aside{
+        flex-direction:column;
+        flex: 0;
+    }
+    aside .sidebar{
+        flex-grow: 1;
+    }
+    
+}
+ table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    background: rgb(144, 247, 247);
+    
+}
+td[colspan]{
+    text-align: center;
+    font-weight: bold;
+    background: rgb(17, 204, 188);
+}
+.main .autor{
+    background: #D7DAF9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
